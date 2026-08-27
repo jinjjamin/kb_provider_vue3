@@ -13,5 +13,5 @@
 </script>
 
 <template>
-	<input type="type" class="inpText" :class="classList" :placeholder="placeholder" v-model="keyword">
+	<input :type="type" class="inpText" :class="classList" :placeholder="placeholder" v-model="keyword">
 </template>

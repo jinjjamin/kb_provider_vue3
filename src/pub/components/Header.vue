@@ -97,7 +97,7 @@
 
 <template>
     <header id="header">
-        <h1 class="logo"><a href="#">로고</a></h1>
+        <h1 class="logo"><a href="/">로고</a></h1>
         <div id="gnb">
 			<ul class="gnbArea">
 				<li class="gnbDep1" v-for="gnbDep1 in gnbDep1s" :key="gnbDep1.index" @mouseenter="gnbOpen" @mouseleave="gnbClose">

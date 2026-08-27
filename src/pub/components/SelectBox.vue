@@ -1,7 +1,9 @@
 <script setup>
 	import {ref} from 'vue';
 
-	const selectedOption = defineModel();
+	const selectedOption = defineModel({
+		default: ''
+	});
 
 	defineProps({
 		optionLists : {

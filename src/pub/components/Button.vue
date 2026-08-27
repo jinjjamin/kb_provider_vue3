@@ -7,12 +7,14 @@
 		buttonText : String,
 		buttonColor : String,
 		buttonType : String,
-		buttonSize : String
+		buttonSize : String,
+		buttonClass : String,
+		link : String,
 	});
 </script>
 
 <template>
-    <a href="#" :class="[{ btns: buttonDefault }, buttonColor, buttonType, buttonSize]">
+    <a :href="link" :class="[{ btns: buttonDefault }, buttonColor, buttonType, buttonSize , buttonClass]">
 		<span>{{buttonText}}</span>
 	</a>
 </template>

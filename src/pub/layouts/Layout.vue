@@ -9,7 +9,8 @@
     import RadioBox from '../components/RadioBox.vue';
     import Modal from '../components/Modal.vue';
     import Pagination from '../components/Pagination.vue';
-    import GridData from '../components/GridData.vue';
+    import Grid from '../components/Grid.vue';
+    import Bedge from '../components/Bedge.vue';
 
     // 모달 팝업 제어
     const activeModal = ref(null);
@@ -123,7 +124,7 @@
             },
             subject : {
                 text : '알코올에 대처하는 우리들의 자세',
-                align : 'left',
+                classList : 'tal',
                 href : '#',
             },
             priority : {
@@ -145,7 +146,7 @@
             },
             subject : {
                 text : '알코올에 대처하는 우리들의 자세',
-                align : 'left',
+                classList : 'tal',
                 href : '#',
             },
             priority : {
@@ -167,7 +168,7 @@
             },
             subject : {
                 text : '알코올에 대처하는 우리들의 자세',
-                align : 'left',
+                classList : 'tal',
                 href : '#',
             },
             priority : {
@@ -193,6 +194,7 @@
         <Header />
         <div class="container">
             <div class="contWrap">
+                <!-- 내용 : s -->
                 <div id="contents">
                     <div class="topTitle first">
                         <h2 class="bigTitle">얼럿창 뛰우기</h2>
@@ -294,12 +296,13 @@
                     </div>
 
                     <div class="topTitle">
-                        <h3 class="midTitle">gridData</h3>
+                        <h3 class="midTitle">grid</h3>
                     </div>
 
-                    <GridData :headers="headers" :columns="columns" />
+                    <Grid :headers="headers" :columns="columns" />
 
 				</div>
+                <!-- 내용 : e -->
             </div>
         </div>
         <Footer />
